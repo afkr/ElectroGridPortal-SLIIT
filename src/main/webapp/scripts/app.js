@@ -22,9 +22,9 @@
   if (handleErrors) {
     request.then((data) => {
       if (data.Status === "warning") {
-        toastr.warning(data.message, "Warning");
+        toastr.warning(data.Message, "Warning");
       } else if (data.Status === "error") {
-        toastr.error(data.message, "Error");
+        toastr.error(data.Message, "Error");
       }
     });
   }
@@ -113,6 +113,9 @@ function getSessionForDefault(key) {
     value = JSON.parse(atob(itemSession)) || 0;
   }
   return value;
+}
+function clearSessionForDefault(key) {
+  sessionStorage.removeItem(key);
 }
 
 function instantiateDateTimePickers() {

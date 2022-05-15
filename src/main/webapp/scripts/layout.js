@@ -3,6 +3,8 @@
   $("#dashRightMenu").click(() => toggleDashRightMenu(true));
 
   $("#mobOverlay,#dash-tabs > li").click(closeMenu);
+
+  $("#logout").click(logout);
 });
 
 function toggleDashLeftMenu(show) {
@@ -35,4 +37,9 @@ function toggleMobLay(show) {
   } else {
     $("#mobOverlay").removeClass("lay");
   }
+}
+
+function logout() {
+  clearSessionForDefault("user");
+  window.location.reload();
 }

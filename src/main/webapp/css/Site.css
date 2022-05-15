@@ -119,16 +119,16 @@ input[type="text"]:not(.custom):hover,
 input[type="email"]:hover,
 input[type="password"]:not(.custom):hover,
 input[type="number"]:not(.custom):hover,
-input[type="tel"]:not(.custom):hover,
 select:hover,
 textarea:hover,
+input[type="tel"]:not(.custom):hover,
 input[type="text"]:not(.custom):focus,
 input[type="email"]:focus,
 input[type="password"]:not(.custom):focus,
 input[type="number"]:focus,
-input[type="tel"]:focus,
 select:focus,
 textarea:focus,
+input[type="tel"]:not(.custom):focus,
 .select2-container--default .select2-selection--single:focus,
 .select2-container--default .select2-selection--single:hover {
   border: 1px solid var(--main_5);
@@ -330,7 +330,7 @@ textarea:focus,
 }
 .dash-mid {
   background-color: var(--dashblue);
-  width: 85%;
+  width: 73%;
   padding: 32px;
 }
 .dash-right {
